@@ -37,7 +37,7 @@ public class Help extends AppCompatActivity {
     }
 
     public void btnViewL(View v){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/0rbianta/YoutubeOnBackground/LICENSE"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://raw.githubusercontent.com/0rbianta/YouTubeOnBackground/master/LICENSE"));
         startActivity(browserIntent);
     }
 
