@@ -5,4 +5,5 @@ You can access a lot of music and videos on YouTube, but you can't play them in 
 <hr>
 <img src="picture(s)/app.png">
 <H1>Attention! This application is subject to certain copyrights.</H1>
+<h3>Please pay attention to copyright as a conscious and honorable developer.</h3>
 <H2>Copyright 2020 0rbianta</H2>
