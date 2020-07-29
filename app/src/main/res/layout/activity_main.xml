@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/App"
+    android:background="@drawable/g_list"
+    tools:context=".MainActivity">
+
+    <!--Bottom player-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#000000"
+                android:gravity="center">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Backyard YT"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic|bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="https://github.com/0rbianta/YoutubeOnBackground\nCopyright 2020 0rbianta"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="italic|bold" />
+
+                <CheckBox
+                    android:id="@+id/chkLoadWebsite"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    app:buttonTint="#FF0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Load Full Website (Avoid video unavailable errors)" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <!--WebView for play youtube-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:text="Each time you open a video, press the stop and play buttons of Youtube to continue in the background"
+                android:textColor="#E11818"
+                android:textSize="16dp" />
+
+            <Button
+                android:onClick="btnHelp"
+                android:id="@+id/btnHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:textSize="18dp"
+                android:textStyle="italic|bold"
+                android:drawableLeft="@drawable/ic_baseline_help_24"
+                android:text="HELP &amp; WHY VIDEO MAY NOT AVAILABLE" />
+
+        </LinearLayout>
+    </ScrollView>
+    <!--Bottom player-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:onClick="btnPPClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#778A81"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:id="@+id/VList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF" />
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:visibility="gone" >
+
+                </WebView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#000000"/>
+
+                <EditText
+                    android:id="@+id/etxtURL"
+                    android:textSize="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/etxt_bg"
+                    android:ems="10"
+                    android:hint=" Youtube URL"
+                    android:inputType="textUri"
+                    android:textColor="#000000" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#000000"/>
+
+                <Button
+                    android:onClick="btnPPClick"
+                    android:id="@+id/btnPP"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_baseline_play_arrow_24" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

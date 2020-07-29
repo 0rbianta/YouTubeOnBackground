@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g_list"
+    android:orientation="vertical"
+    android:id="@+id/help_bg"
+    tools:context=".Help">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+                android:text="Back"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:shadowColor = "#000"
+                android:shadowDx = "-5"
+                android:shadowDy = "-4"
+                android:shadowRadius = "4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Why video not Available?"
+                android:textAlignment="center"
+                android:textColor="#D000FF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:shadowColor = "#000"
+                android:shadowDx = "-5"
+                android:shadowDy = "-4"
+                android:shadowRadius = "4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Youtube videos are shown in a way called embed, and some famous videos with famous music do not support the feature called embed. For this reason, when you want to open videos that do not support the famous nusik and embed feature, you will get the text video unavailable."
+                android:textAlignment="center"
+                android:textColor="#A1CEF1"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#000000"/>
+            <TextView
+                android:shadowColor = "#000"
+                android:shadowDx = "-5"
+                android:shadowDy = "-4"
+                android:shadowRadius = "4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="How to use this app?"
+                android:textAlignment="center"
+                android:textColor="#E700FF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:shadowColor = "#000"
+                android:shadowDx = "-5"
+                android:shadowDy = "-4"
+                android:shadowRadius = "4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Go to youtube's website or mobile app and copy link of your video then go to this app and paste your URL to Youtube URL box. Click play button and listen your music or video on background. If you want to stop video, go back to app and click pause button. If the video stops in the background after opening it, go back to the application and try playing it again."
+                android:textAlignment="center"
+                android:textColor="#A1CEF1"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:shadowColor = "#000"
+                android:shadowDx = "-5"
+                android:shadowDy = "-4"
+                android:shadowRadius = "4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="License"
+                android:textAlignment="center"
+                android:textColor="#D000FF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <Button
+                android:onClick="btnViewL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:text="VIEW LICENSE"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#000000"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+            <TextView
+                android:shadowColor = "#000"
+                android:shadowDx = "-5"
+                android:shadowDy = "-4"
+                android:shadowRadius = "4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="This application was made by 0rbianta.\nCopyright 2020 0rbianta"
+                android:textAlignment="center"
+                android:textColor="#E700FF"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
