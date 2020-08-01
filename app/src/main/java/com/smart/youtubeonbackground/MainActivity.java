@@ -134,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
                 //Start Service
                 Channel();
                 Intent s = new Intent(getBaseContext(), service.class);
-                s.putExtra("times", 5);
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
                     startForegroundService(s);
                 } else {
